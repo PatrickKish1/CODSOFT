@@ -1,0 +1,225 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f1fff1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.home-and-name {
+  display: flex;
+  align-items: center;
+}
+
+.home-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  margin-left: -330px;
+}
+
+nav ul li {
+  margin: 0 15px;
+  margin-left: -5px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ddd;
+  cursor: pointer;
+}
+
+section {
+  padding: 80px 20px 20px 20px;
+  border-bottom: 1px solid #ddd;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  padding: 3px;
+  margin: 30px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill.card {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  height: 180px;
+  width: 120px;
+}
+
+.skill.card:hover {
+  transform: scale(1.1);
+}
+
+.skill img {
+  width: 80px;
+  height: 80px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project.card {
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 230px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project.card:hover {
+  background-color: #f0f0f0;
+}
+
+.project-details {
+  margin-top: 20px;
+}
+
+.recommendations-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recommendation.card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 80em;
+  max-width: 90%;
+}
+
+.profile-pic {
+  margin-right: 10px;
+}
+
+.profile-pic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.recommendation-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#add-recommendation {
+  padding: 20px;
+}
+
+#recommendation-form textarea, #recommendation-form input {
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#recommendation-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#recommendation-form button:hover {
+  background-color: #555;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+footer #copyright {
+  margin-right: 100px;
+}
+
+footer .contact-info {
+  margin-right: 20px;
+}
