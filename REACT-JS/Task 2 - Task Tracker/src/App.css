@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: #0b1030; /* Dark background */
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.task-list-container {
+  margin-top: 30px;
+}
+
+.task-list-container h2 {
+  margin-bottom: 10px;
+}
+
+
+/* Add this CSS rule for the message */
+.no-tasks-message {
+  font-style: italic;
+  font-size: 15px;
+  color: #bbbbbb; /* Light gray color for better visibility */
+}

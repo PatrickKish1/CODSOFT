@@ -1,0 +1,55 @@
+.add-task-form {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  max-width: 400px;
+  margin: 0 auto 20px auto;
+  color: #ffffff; /* White text */
+}
+
+.add-task-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-task-form input[type="text"],
+.add-task-form input[type="date"],
+.add-task-form input[type="time"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff; /* White text */
+  font-size: 1rem; /* Larger font size */
+}
+
+.add-task-form input[type="text"]::placeholder,
+.add-task-form input[type="date"]::placeholder,
+.add-task-form input[type="time"]::placeholder {
+  color: #999; /* Darker placeholder text */
+}
+
+.add-task-form input[type="date"]::-webkit-calendar-picker-indicator,
+.add-task-form input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.add-task-form .create-task-btn {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
+
+.add-task-form .create-task-btn:hover {
+  background-color: #218838;
+}

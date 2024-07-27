@@ -1,0 +1,86 @@
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 70%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-size: 1.2rem; /* Increase font size */
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-left: auto; /* Center the task item */
+  margin-right: auto; /* Center the task item */
+}
+
+.task-item.completed {
+  background-color: #0ab150;
+  border-color: #a0e0a0;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.task-item span {
+  flex-grow: 1;
+  color: #ffffff;
+}
+
+.task-actions {
+  display: flex;
+  align-items: center;
+}
+
+.task-actions .edit-btn,
+.task-actions .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+.task-actions .edit-btn svg,
+.task-actions .delete-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.task-actions .delete-btn:hover svg {
+  stroke: red;
+}
+
+.save-btn {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.save-btn:hover {
+  background-color: #0056b3;
+}
+
+.cancel-btn {
+  padding: 5px 10px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268;
+}
